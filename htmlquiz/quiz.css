@@ -1,0 +1,92 @@
+:root{
+    --hue-neutral:200;
+    --hue-wrong :0;
+    --hue-correct: 145;
+}
+body{
+    --hue:var(--hue--neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 200vh;
+    height: 200vh;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+
+}
+body.correct{
+    --hue:var(--hue-wrong)
+}
+body.wrong{
+    --hue:var(--hue-wrong)
+
+}
+.contaier{
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+ .btn-grid{
+    display: grid;
+ }
+ .btn-1{
+     position: relative;
+     left: 310px;
+     width: 150px;
+     border-radius: 5px;
+     padding: 5px 10px;
+ }
+ .btn-2{
+     position: relative;
+     left: 330px;
+     width: 150px;
+     border-radius: 5px;
+     padding: 5px 10px;
+ }
+ .btn-3{
+     position: relative;
+     top: 30px;
+     left: 5px;
+     width: 150px;
+     border-radius: 5px;
+     padding: 5px 10px;
+ }
+ .btn-4{
+     position: relative;
+     top: 30px;
+     left: 20px;
+     width: 150px;
+     border-radius: 5px;
+     padding: 5px 10px ;
+ } 
+ .btn{
+     background-color: blueviolet;
+     outline: none;
+     cursor: pointer;
+ }  
+ .btn:hover{
+     border-color: black;
+ } 
+ .start-btn,
+ .next-btn{
+     position: relative;
+     top: 60px;
+     right: 280px;
+     font-size: 1.5rem;
+     cursor: pointer;
+ }
+ .controls{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .hide{
+     display: none;
+ }
+
+    
+    
