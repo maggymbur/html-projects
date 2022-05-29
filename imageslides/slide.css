@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: goldenrod;
+}
+.slider{
+    width: 480px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slide{
+    width: 40%;
+    transition: 2s;
+}
+.navigation-manual{
+    position: absolute;
+    width: 600px;
+    margin-top: -120px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 3px solid red;
+    padding: 3px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: blue;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20px;
+}
+#radio3:checked ~ .first{
+    margin-left: -40px;
+}
+#radio4:checked ~ .first{
+    margin-left: -60px;
+}
+
+
+
